@@ -1,0 +1,100 @@
+Python version: 3.8.20 (default, Oct  3 2024, 15:24:27) 
+[GCC 11.2.0]
+Numpy version: 1.22.3
+PyMC3 version: 3.11.4
+Arviz version: 0.12.1
+===
+FAST = False
+
+if not FAST:
+    numIters = 10
+    numItersData = 10
+    popSize = 1000
+else:
+    numIters = 4
+    numItersData = 6
+    popSize = 100
+smcArgs = {"verbose": True, "numProcs": 40}
+===
+-12
+Number of zeros: 21
+Mean summands: 5.11128312938337
+===
+-18
+Starting ABC-SMC with population size of 1000 and sample size of 100 (~> 100) on 40 processes.
+Finished sampling from prior, eps = 28.80, time = 139.0s / 2.3m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 15.24, time = 26.0s / 0.4m, popSize = 1580 -> 522, ESS = 1528 -> 500, # sims = 2680, total # sims = 3680
+Finished SMC iteration 2, eps = 10.18, time = 0.0s / 0.0m, popSize = 1552 -> 538, ESS = 1454 -> 500, # sims = 3160, total # sims = 6840
+Finished SMC iteration 3, eps = 6.53, time = 1.0s / 0.0m, popSize = 1571 -> 537, ESS = 1380 -> 500, # sims = 3840, total # sims = 10680
+Finished SMC iteration 4, eps = 4.23, time = 0.0s / 0.0m, popSize = 1551 -> 530, ESS = 1432 -> 500, # sims = 4000, total # sims = 14680
+Finished SMC iteration 5, eps = 2.90, time = 1.0s / 0.0m, popSize = 1562 -> 526, ESS = 1432 -> 500, # sims = 6640, total # sims = 21320
+Finished SMC iteration 6, eps = 2.22, time = 1.0s / 0.0m, popSize = 1563 -> 537, ESS = 1404 -> 500, # sims = 9760, total # sims = 31080
+Finished SMC iteration 7, eps = 1.87, time = 1.0s / 0.0m, popSize = 1616 -> 597, ESS = 1414 -> 500, # sims = 27080, total # sims = 58160
+Finished SMC iteration 8, eps = 1.61, time = 3.0s / 0.0m, popSize = 1675 -> 558, ESS = 1446 -> 500, # sims = 69080, total # sims = 127240
+Finished SMC iteration 9, eps = 1.42, time = 7.0s / 0.1m, popSize = 1706 -> 541, ESS = 1538 -> 500, # sims = 189480, total # sims = 316720
+Finished SMC iteration 10, eps = 1.36, time = 18.0s / 0.3m, popSize = 1602 -> 1000, ESS = 1415 -> 895, # sims = 476160, total # sims = 792880
+CPU times: user 16.6 s, sys: 2.02 s, total: 18.6 s
+Wall time: 3min 18s
+===
+-20
+Starting ABC-SMC with population size of 1000 and sample size of 100 (~> 100) on 40 processes.
+Finished sampling from prior, eps = 195.63, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 54.29, time = 20.0s / 0.3m, popSize = 1523 -> 506, ESS = 1505 -> 500, # sims = 1560, total # sims = 2560
+Finished SMC iteration 2, eps = 12.62, time = 0.0s / 0.0m, popSize = 1551 -> 505, ESS = 1524 -> 500, # sims = 1560, total # sims = 4120
+Finished SMC iteration 3, eps = 3.94, time = 0.0s / 0.0m, popSize = 1592 -> 504, ESS = 1560 -> 500, # sims = 1560, total # sims = 5680
+Finished SMC iteration 4, eps = 2.25, time = 0.0s / 0.0m, popSize = 1512 -> 506, ESS = 1474 -> 500, # sims = 1600, total # sims = 7280
+Finished SMC iteration 5, eps = 1.78, time = 0.0s / 0.0m, popSize = 1560 -> 515, ESS = 1473 -> 500, # sims = 3240, total # sims = 10520
+Finished SMC iteration 6, eps = 1.53, time = 1.0s / 0.0m, popSize = 1579 -> 516, ESS = 1490 -> 500, # sims = 9360, total # sims = 19880
+Finished SMC iteration 7, eps = 1.34, time = 1.0s / 0.0m, popSize = 1603 -> 516, ESS = 1527 -> 500, # sims = 25200, total # sims = 45080
+Finished SMC iteration 8, eps = 1.22, time = 2.0s / 0.0m, popSize = 1549 -> 527, ESS = 1475 -> 500, # sims = 70080, total # sims = 115160
+Finished SMC iteration 9, eps = 1.11, time = 8.0s / 0.1m, popSize = 1654 -> 525, ESS = 1569 -> 500, # sims = 253440, total # sims = 368600
+Finished SMC iteration 10, eps = 1.07, time = 21.0s / 0.4m, popSize = 1632 -> 1000, ESS = 1544 -> 952, # sims = 740560, total # sims = 1109160
+CPU times: user 9.67 s, sys: 1.38 s, total: 11.1 s
+Wall time: 59.7 s
+===
+-27
+Starting ABC-SMC with population size of 1000 and sample size of 100 (~> 1) on 40 processes.
+Finished sampling from prior, eps = 2183.35, time = 126.0s / 2.1m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 900.92, time = 24.0s / 0.4m, popSize = 1515 -> 519, ESS = 1459 -> 500, # sims = 2640, total # sims = 3640
+Finished SMC iteration 2, eps = 307.64, time = 0.0s / 0.0m, popSize = 1602 -> 538, ESS = 1477 -> 500, # sims = 4400, total # sims = 8040
+Finished SMC iteration 3, eps = 100.57, time = 1.0s / 0.0m, popSize = 1662 -> 535, ESS = 1426 -> 500, # sims = 10760, total # sims = 18800
+Finished SMC iteration 4, eps = 35.06, time = 1.0s / 0.0m, popSize = 1582 -> 551, ESS = 1401 -> 500, # sims = 27240, total # sims = 46040
+Finished SMC iteration 5, eps = 12.34, time = 2.0s / 0.0m, popSize = 1594 -> 556, ESS = 1412 -> 500, # sims = 78080, total # sims = 124120
+Finished SMC iteration 6, eps = 4.35, time = 5.0s / 0.1m, popSize = 1619 -> 605, ESS = 1398 -> 500, # sims = 244080, total # sims = 368200
+Finished SMC iteration 7, eps = 1.71, time = 16.0s / 0.3m, popSize = 1608 -> 600, ESS = 1373 -> 500, # sims = 713200, total # sims = 1081400
+Finished SMC iteration 8, eps = 0.57, time = 41.0s / 0.7m, popSize = 1733 -> 565, ESS = 1453 -> 500, # sims = 1930040, total # sims = 3011440
+Finished SMC iteration 9, eps = 0.20, time = 112.0s / 1.9m, popSize = 1628 -> 573, ESS = 1348 -> 500, # sims = 5264720, total # sims = 8276160
+Finished SMC iteration 10, eps = 0.12, time = 334.0s / 5.6m, popSize = 1686 -> 1000, ESS = 1360 -> 760, # sims = 15605000, total # sims = 23881160
+CPU times: user 16.7 s, sys: 1.83 s, total: 18.5 s
+Wall time: 11min 5s
+===
+-28
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (1 chains in 1 job)
+NUTS: [δ, p]
+
+ 100.00% [1500/1500 00:03<00:00 Sampling chain 0, 0 divergences]
+Sampling 1 chain for 500 tune and 1_000 draw iterations (500 + 1_000 draws total) took 3 seconds.
+Only one chain was sampled, this makes it impossible to run some convergence checks
+CPU times: user 4.11 s, sys: 373 ms, total: 4.48 s
+Wall time: 9.79 s
+===
+-29
+Optimiser reports a success? True
+[0.79000141 5.54344584] (0.8, 5)
+===
+last
+Notebook time = 1819 secs = 30.31 mins
+
+
+
+
+
+
+
+
+
+
+
+

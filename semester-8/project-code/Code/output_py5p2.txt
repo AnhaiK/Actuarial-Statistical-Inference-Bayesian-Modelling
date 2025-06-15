@@ -1,0 +1,86 @@
+ABC version: 0.2.1
+Python version: 3.8.20 (default, Oct  3 2024, 15:24:27) 
+[GCC 11.2.0]
+Numpy version: 1.22.3
+PyMC3 version: 3.11.4
+Arviz version: 0.12.1
+===
+-7
+The number of individual claim sizes is  178
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.003
+Stage:   1 Beta: 0.020
+Stage:   2 Beta: 0.072
+Stage:   3 Beta: 0.208
+Stage:   4 Beta: 0.675
+Stage:   5 Beta: 1.000
+CPU times: user 2.74 s, sys: 275 ms, total: 3.02 s
+Wall time: 12.1 s
+The number of individual claim sizes is  1017
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.000
+Stage:   1 Beta: 0.003
+Stage:   2 Beta: 0.013
+Stage:   3 Beta: 0.039
+Stage:   4 Beta: 0.125
+Stage:   5 Beta: 0.399
+Stage:   6 Beta: 1.000
+CPU times: user 3.13 s, sys: 21.8 ms, total: 3.15 s
+Wall time: 3.19 s
+===
+-
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.037
+Stage:   1 Beta: 0.271
+Stage:   2 Beta: 1.000
+CPU times: user 985 ms, sys: 55.3 ms, total: 1.04 s
+Wall time: 4.12 s
+/home/spacenut/miniconda3/envs/sem8/lib/python3.8/site-packages/arviz/utils.py:187: NumbaDeprecationWarning: The 'nopython' keyword argument was not supplied to the 'numba.jit' decorator. The implicit default value for this argument is currently False, but it will be changed to True in Numba 0.59.0. See https://numba.readthedocs.io/en/stable/reference/deprecation.html#deprecation-of-object-mode-fall-back-behaviour-when-using-jit for details.
+  numba_fn = numba.jit(**self.kwargs)(self.function)
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.008
+Stage:   1 Beta: 0.062
+Stage:   2 Beta: 0.474
+Stage:   3 Beta: 1.000
+CPU times: user 997 ms, sys: 2.75 ms, total: 999 ms
+Wall time: 1 s
+===
+-17
+Starting ABC-SMC with population size of 1000 and sample size of 50 (~> 50) on 40 processes.
+Finished sampling from prior, eps = 18.44, time = 3.0s / 0.0m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 12.06, time = 1.0s / 0.0m, popSize = 1540 -> 520, ESS = 1491 -> 500, # sims = 2400, total # sims = 3400
+Finished SMC iteration 2, eps = 8.05, time = 1.0s / 0.0m, popSize = 1538 -> 535, ESS = 1457 -> 500, # sims = 2680, total # sims = 6080
+Finished SMC iteration 3, eps = 6.65, time = 1.0s / 0.0m, popSize = 1595 -> 561, ESS = 1461 -> 500, # sims = 5320, total # sims = 11400
+Finished SMC iteration 4, eps = 5.44, time = 2.0s / 0.0m, popSize = 1604 -> 571, ESS = 1405 -> 500, # sims = 12800, total # sims = 24200
+Finished SMC iteration 5, eps = 4.10, time = 2.0s / 0.0m, popSize = 1646 -> 522, ESS = 1483 -> 500, # sims = 12800, total # sims = 37000
+Finished SMC iteration 6, eps = 2.99, time = 3.0s / 0.1m, popSize = 2913 -> 521, ESS = 2583 -> 500, # sims = 12800, total # sims = 49800
+Finished SMC iteration 7, eps = 2.61, time = 4.0s / 0.1m, popSize = 1569 -> 532, ESS = 1406 -> 500, # sims = 18120, total # sims = 67920
+Finished SMC iteration 8, eps = 2.32, time = 11.0s / 0.2m, popSize = 1612 -> 558, ESS = 1356 -> 500, # sims = 48160, total # sims = 116080
+Finished SMC iteration 9, eps = 2.10, time = 34.0s / 0.6m, popSize = 1685 -> 575, ESS = 1478 -> 500, # sims = 151480, total # sims = 267560
+Finished SMC iteration 10, eps = 2.00, time = 80.0s / 1.3m, popSize = 1662 -> 1000, ESS = 1397 -> 811, # sims = 367040, total # sims = 634600
+CPU times: user 11.9 s, sys: 1.29 s, total: 13.2 s
+Wall time: 2min 26s
+Starting ABC-SMC with population size of 1000 and sample size of 250 (~> 250) on 40 processes.
+Finished sampling from prior, eps = 24.22, time = 3.0s / 0.0m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 16.49, time = 2.0s / 0.0m, popSize = 1584 -> 519, ESS = 1540 -> 500, # sims = 2400, total # sims = 3400
+Finished SMC iteration 2, eps = 10.66, time = 2.0s / 0.0m, popSize = 1531 -> 539, ESS = 1266 -> 500, # sims = 2400, total # sims = 5800
+Finished SMC iteration 3, eps = 8.99, time = 3.0s / 0.0m, popSize = 1601 -> 587, ESS = 1289 -> 500, # sims = 3640, total # sims = 9440
+Finished SMC iteration 4, eps = 6.78, time = 6.0s / 0.1m, popSize = 1619 -> 576, ESS = 1371 -> 500, # sims = 7600, total # sims = 17040
+Finished SMC iteration 5, eps = 3.24, time = 7.0s / 0.1m, popSize = 3364 -> 510, ESS = 3105 -> 500, # sims = 7600, total # sims = 24640
+Finished SMC iteration 6, eps = 2.14, time = 8.0s / 0.1m, popSize = 3050 -> 517, ESS = 2733 -> 500, # sims = 7600, total # sims = 32240
+Finished SMC iteration 7, eps = 1.83, time = 9.0s / 0.1m, popSize = 1527 -> 543, ESS = 1371 -> 500, # sims = 8560, total # sims = 40800
+Finished SMC iteration 8, eps = 1.59, time = 20.0s / 0.3m, popSize = 1568 -> 526, ESS = 1412 -> 500, # sims = 20320, total # sims = 61120
+Finished SMC iteration 9, eps = 1.42, time = 58.0s / 1.0m, popSize = 1594 -> 533, ESS = 1437 -> 500, # sims = 58400, total # sims = 119520
+Finished SMC iteration 10, eps = 1.36, time = 140.0s / 2.3m, popSize = 1536 -> 1000, ESS = 1310 -> 883, # sims = 140720, total # sims = 260240
+CPU times: user 12.9 s, sys: 383 ms, total: 13.3 s
+Wall time: 4min 21s
+===
+last
+Notebook time = 1135 secs = 18.92 mins
+
+
+

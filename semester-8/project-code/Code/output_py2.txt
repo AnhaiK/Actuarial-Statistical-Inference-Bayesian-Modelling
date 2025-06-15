@@ -1,0 +1,100 @@
+Starting ABC-SMC with population size of 1000 and sample size of 100 (~> 100) on 40 processes.
+Finished sampling from prior, eps = 183.66, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 53.47, time = 22.0s / 0.4m, popSize = 1537 -> 507, ESS = 1516 -> 500, # sims = 1560, total # sims = 2560
+Finished SMC iteration 2, eps = 12.40, time = 0.0s / 0.0m, popSize = 1538 -> 504, ESS = 1513 -> 500, # sims = 1560, total # sims = 4120
+Finished SMC iteration 3, eps = 3.66, time = 0.0s / 0.0m, popSize = 1572 -> 503, ESS = 1546 -> 500, # sims = 1560, total # sims = 5680
+Finished SMC iteration 4, eps = 2.19, time = 1.0s / 0.0m, popSize = 1509 -> 506, ESS = 1456 -> 500, # sims = 1640, total # sims = 7320
+Finished SMC iteration 5, eps = 1.73, time = 0.0s / 0.0m, popSize = 1588 -> 508, ESS = 1522 -> 500, # sims = 3840, total # sims = 11160
+Finished SMC iteration 6, eps = 1.50, time = 0.0s / 0.0m, popSize = 1534 -> 522, ESS = 1418 -> 500, # sims = 9240, total # sims = 20400
+Finished SMC iteration 7, eps = 1.34, time = 1.0s / 0.0m, popSize = 1531 -> 545, ESS = 1391 -> 500, # sims = 26640, total # sims = 47040
+Finished SMC iteration 8, eps = 1.20, time = 2.0s / 0.0m, popSize = 1717 -> 519, ESS = 1613 -> 500, # sims = 93760, total # sims = 140800
+Finished SMC iteration 9, eps = 1.10, time = 6.0s / 0.1m, popSize = 1622 -> 522, ESS = 1549 -> 500, # sims = 270160, total # sims = 410960
+Finished SMC iteration 10, eps = 1.02, time = 20.0s / 0.3m, popSize = 1546 -> 520, ESS = 1468 -> 500, # sims = 841920, total # sims = 1252880
+Finished SMC iteration 11, eps = 0.95, time = 57.0s / 1.0m, popSize = 1579 -> 556, ESS = 1478 -> 500, # sims = 2453120, total # sims = 3706000
+Finished SMC iteration 12, eps = 0.90, time = 174.0s / 2.9m, popSize = 1647 -> 542, ESS = 1541 -> 500, # sims = 7956640, total # sims = 11662640
+Finished SMC iteration 13, eps = 0.84, time = 515.0s / 8.6m, popSize = 1622 -> 534, ESS = 1538 -> 500, # sims = 23117760, total # sims = 34780400
+/home/spacenut/miniconda3/envs/sem8/lib/python3.8/site-packages/joblib/externals/loky/process_executor.py:752: UserWarning: A worker stopped while some jobs were given to the executor. This can be caused by a too short worker timeout or by a memory leak.
+  warnings.warn(
+Finished SMC iteration 14, eps = 0.80, time = 1622.0s / 27.0m, popSize = 1610 -> 531, ESS = 1525 -> 500, # sims = 73824560, total # sims = 108604960
+===
+numIters = 10
+popSize = 1000
+
+numItersData = 10
+smcArgs = {"numProcs": 40, "verbose": True}
+====
+-8
+
+
+ABC version: 0.2.1
+Python version: 3.8.20 (default, Oct  3 2024, 15:24:27) 
+[GCC 11.2.0]
+Numpy version: 1.22.3
+PyMC3 version: 3.11.4
+Arviz version: 0.12.1
+=====
+-11
+Starting ABC-SMC with population size of 1000 and sample size of 100 (~> 100) on 40 processes.
+Finished sampling from prior, eps = 180.23, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 48.83, time = 17.0s / 0.3m, popSize = 1536 -> 505, ESS = 1515 -> 500, # sims = 1520, total # sims = 2520
+Finished SMC iteration 2, eps = 11.00, time = 0.0s / 0.0m, popSize = 1531 -> 503, ESS = 1505 -> 500, # sims = 1560, total # sims = 4080
+Finished SMC iteration 3, eps = 3.52, time = 0.0s / 0.0m, popSize = 1579 -> 503, ESS = 1551 -> 500, # sims = 1560, total # sims = 5640
+Finished SMC iteration 4, eps = 2.15, time = 0.0s / 0.0m, popSize = 1518 -> 507, ESS = 1466 -> 500, # sims = 1720, total # sims = 7360
+Finished SMC iteration 5, eps = 1.73, time = 0.0s / 0.0m, popSize = 1559 -> 512, ESS = 1511 -> 500, # sims = 3800, total # sims = 11160
+Finished SMC iteration 6, eps = 1.49, time = 1.0s / 0.0m, popSize = 1667 -> 517, ESS = 1602 -> 500, # sims = 10720, total # sims = 21880
+Finished SMC iteration 7, eps = 1.32, time = 1.0s / 0.0m, popSize = 1575 -> 518, ESS = 1497 -> 500, # sims = 32080, total # sims = 53960
+Finished SMC iteration 8, eps = 1.20, time = 3.0s / 0.0m, popSize = 1541 -> 532, ESS = 1454 -> 500, # sims = 87080, total # sims = 141040
+Finished SMC iteration 9, eps = 1.11, time = 8.0s / 0.1m, popSize = 1573 -> 522, ESS = 1500 -> 500, # sims = 280720, total # sims = 421760
+Finished SMC iteration 10, eps = 1.07, time = 23.0s / 0.4m, popSize = 1602 -> 1000, ESS = 1534 -> 962, # sims = 806520, total # sims = 1228280
+CPU times: user 9.38 s, sys: 210 ms, total: 9.59 s
+Wall time: 58.7 s
+=====
+-14
+Starting ABC-SMC with population size of 1000 and sample size of 100 (~> 1) on 40 processes.
+Finished sampling from prior, eps = 2047.68, time = 5.0s / 0.1m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 872.44, time = 0.0s / 0.0m, popSize = 1553 -> 521, ESS = 1482 -> 500, # sims = 2600, total # sims = 3600
+Finished SMC iteration 2, eps = 324.42, time = 0.0s / 0.0m, popSize = 1556 -> 595, ESS = 1387 -> 500, # sims = 3960, total # sims = 7560
+Finished SMC iteration 3, eps = 123.67, time = 1.0s / 0.0m, popSize = 1649 -> 608, ESS = 1324 -> 500, # sims = 9720, total # sims = 17280
+Finished SMC iteration 4, eps = 49.25, time = 1.0s / 0.0m, popSize = 1697 -> 657, ESS = 1384 -> 500, # sims = 26680, total # sims = 43960
+Finished SMC iteration 5, eps = 16.84, time = 2.0s / 0.0m, popSize = 1721 -> 598, ESS = 1466 -> 500, # sims = 71280, total # sims = 115240
+Finished SMC iteration 6, eps = 5.65, time = 4.0s / 0.1m, popSize = 1635 -> 570, ESS = 1400 -> 500, # sims = 191400, total # sims = 306640
+Finished SMC iteration 7, eps = 2.07, time = 12.0s / 0.2m, popSize = 1656 -> 622, ESS = 1377 -> 500, # sims = 536400, total # sims = 843040
+Finished SMC iteration 8, eps = 0.65, time = 34.0s / 0.6m, popSize = 1801 -> 569, ESS = 1538 -> 500, # sims = 1712960, total # sims = 2556000
+Finished SMC iteration 9, eps = 0.25, time = 103.0s / 1.7m, popSize = 1662 -> 642, ESS = 1365 -> 500, # sims = 5136480, total # sims = 7692480
+Finished SMC iteration 10, eps = 0.15, time = 285.0s / 4.8m, popSize = 1731 -> 1000, ESS = 1439 -> 826, # sims = 13973880, total # sims = 21666360
+CPU times: user 12.6 s, sys: 751 ms, total: 13.4 s
+Wall time: 7min 29s
+=====
+-15
+Auto-assigning NUTS sampler...
+Initializing NUTS using jitter+adapt_diag...
+Sequential sampling (1 chains in 1 job)
+NUTS: [δ, p]
+
+ 100.00% [1500/1500 00:03<00:00 Sampling chain 0, 0 divergences]
+Sampling 1 chain for 500 tune and 1_000 draw iterations (500 + 1_000 draws total) took 3 seconds.
+Only one chain was sampled, this makes it impossible to run some convergence checks
+CPU times: user 4.3 s, sys: 931 ms, total: 5.23 s
+Wall time: 11.7 s
+====
+-16
+Optimiser reports a success? True
+[0.79000141 5.54344584] (0.8, 5)
+===
+last
+Notebook time = 3172 secs = 52.86 mins
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

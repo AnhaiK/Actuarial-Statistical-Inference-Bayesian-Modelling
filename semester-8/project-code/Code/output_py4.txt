@@ -1,0 +1,486 @@
+ABC version: 0.2.1
+Python version: 3.8.20 (default, Oct  3 2024, 15:24:27) 
+[GCC 11.2.0]
+Numpy version: 1.22.3
+PyMC3 version: 3.11.4
+Arviz version: 0.12.1
+====
+-4
+FAST = False
+
+# Processor information and SMC calibration parameters
+if not FAST:
+    numItersData = 11
+    popSize = 1000
+    popSizeModels = 1000
+    epsMin = 0
+else:
+    numItersData = 6
+    popSize = 500
+    popSizeModels = 1000
+    epsMin = 1
+
+smcArgs = { "epsMin": epsMin, "verbose": True}
+smcArgs["numProcs"] = 40
+===
+-8
+Starting ABC-SMC with population size of 1000 and sample size of 25 (~> 25) on 40 processes.
+Finished sampling from prior, eps = 51.71, time = 136.0s / 2.3m, popSize = 1000 -> 500, ESS = (327, 343, 330) -> (112, 193, 195), # sims = 1000, total # sims = 1000
+	model populations = (327, 343, 330), model weights = [0.33 0.34 0.33]
+Finished SMC iteration 1, eps = 1.70, time = 28.0s / 0.5m, popSize = 1564 -> 512, ESS = (306, 603, 606) -> (18, 445, 37), # sims = 2840, total # sims = 3840
+	model populations = (322, 620, 622), model weights = [0.22 0.38 0.4 ]
+Finished SMC iteration 2, eps = 1.69, time = 1.0s / 0.0m, popSize = 1529 -> 878, ESS = (40, 839, 211) -> (37, 254, 209), # sims = 3200, total # sims = 7040
+	model populations = (50, 935, 544), model weights = [0.06 0.86 0.08]
+Finished SMC iteration 3, eps = 0.99, time = 1.0s / 0.0m, popSize = 1889 -> 774, ESS = (55, 622, 719) -> (17, 59, 424), # sims = 3640, total # sims = 10680
+	model populations = (84, 699, 1106), model weights = [0.16 0.66 0.18]
+Finished SMC iteration 4, eps = 0.68, time = 1.0s / 0.0m, popSize = 1781 -> 718, ESS = (69, 244, 959) -> (38, 103, 359), # sims = 3760, total # sims = 14440
+	model populations = (95, 406, 1280), model weights = [0.27 0.25 0.48]
+Finished SMC iteration 5, eps = 0.47, time = 1.0s / 0.0m, popSize = 1724 -> 622, ESS = (128, 393, 807) -> (66, 154, 280), # sims = 4280, total # sims = 18720
+	model populations = (157, 582, 985), model weights = [0.39 0.22 0.39]
+Finished SMC iteration 6, eps = 0.33, time = 1.0s / 0.0m, popSize = 1634 -> 573, ESS = (197, 433, 789) -> (68, 115, 317), # sims = 6560, total # sims = 25280
+	model populations = (216, 538, 880), model weights = [0.46 0.2  0.34]
+Finished SMC iteration 7, eps = 0.25, time = 1.0s / 0.0m, popSize = 1644 -> 572, ESS = (198, 360, 881) -> (73, 101, 326), # sims = 14080, total # sims = 39360
+	model populations = (228, 444, 972), model weights = [0.45 0.19 0.36]
+Finished SMC iteration 8, eps = 0.20, time = 1.0s / 0.0m, popSize = 1657 -> 563, ESS = (277, 262, 867) -> (103, 82, 315), # sims = 29400, total # sims = 68760
+	model populations = (335, 339, 983), model weights = [0.46 0.17 0.38]
+Finished SMC iteration 9, eps = 0.17, time = 3.0s / 0.0m, popSize = 1658 -> 573, ESS = (395, 185, 787) -> (140, 97, 263), # sims = 70080, total # sims = 138840
+	model populations = (470, 278, 910), model weights = [0.48 0.16 0.36]
+Finished SMC iteration 10, eps = 0.15, time = 5.0s / 0.1m, popSize = 1576 -> 557, ESS = (384, 288, 670) -> (142, 102, 256), # sims = 168200, total # sims = 307040
+	model populations = (477, 328, 771), model weights = [0.47 0.17 0.36]
+Finished SMC iteration 11, eps = 0.14, time = 15.0s / 0.3m, popSize = 1607 -> 1000, ESS = (422, 269, 707) -> (260, 189, 431), # sims = 479240, total # sims = 786280
+	model populations = (493, 327, 787), model weights = [0.44 0.17 0.39]
+CPU times: user 19.7 s, sys: 2.28 s, total: 22 s
+Wall time: 3min 16s
+Starting ABC-SMC with population size of 1000 and sample size of 50 (~> 50) on 40 processes.
+Finished sampling from prior, eps = 61.01, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = (333, 335, 332) -> (116, 176, 208), # sims = 1000, total # sims = 1000
+	model populations = (333, 335, 332), model weights = [0.33 0.34 0.33]
+Finished SMC iteration 1, eps = 1.81, time = 0.0s / 0.0m, popSize = 1588 -> 516, ESS = (357, 577, 585) -> (33, 433, 34), # sims = 2680, total # sims = 3680
+	model populations = (386, 599, 603), model weights = [0.25 0.34 0.41]
+Finished SMC iteration 2, eps = 1.79, time = 0.0s / 0.0m, popSize = 1526 -> 869, ESS = (72, 815, 194) -> (71, 239, 190), # sims = 3000, total # sims = 6680
+	model populations = (88, 921, 517), model weights = [0.08 0.84 0.08]
+Finished SMC iteration 3, eps = 1.10, time = 1.0s / 0.0m, popSize = 1870 -> 802, ESS = (49, 591, 711) -> (19, 72, 409), # sims = 3440, total # sims = 10120
+	model populations = (146, 652, 1072), model weights = [0.2  0.61 0.2 ]
+Finished SMC iteration 4, eps = 0.81, time = 0.0s / 0.0m, popSize = 1803 -> 777, ESS = (92, 342, 789) -> (49, 161, 290), # sims = 3480, total # sims = 13600
+	model populations = (178, 489, 1136), model weights = [0.35 0.25 0.41]
+Finished SMC iteration 5, eps = 0.53, time = 0.0s / 0.0m, popSize = 1779 -> 603, ESS = (164, 540, 640) -> (87, 218, 195), # sims = 3560, total # sims = 17160
+	model populations = (252, 704, 823), model weights = [0.43 0.26 0.31]
+Finished SMC iteration 6, eps = 0.37, time = 1.0s / 0.0m, popSize = 1627 -> 559, ESS = (240, 535, 626) -> (93, 186, 221), # sims = 4120, total # sims = 21280
+	model populations = (271, 619, 737), model weights = [0.45 0.26 0.3 ]
+Finished SMC iteration 7, eps = 0.28, time = 1.0s / 0.0m, popSize = 1577 -> 551, ESS = (299, 491, 597) -> (126, 166, 208), # sims = 7320, total # sims = 28600
+	model populations = (358, 546, 673), model weights = [0.47 0.25 0.28]
+Finished SMC iteration 8, eps = 0.24, time = 1.0s / 0.0m, popSize = 1612 -> 549, ESS = (394, 427, 625) -> (145, 150, 205), # sims = 15360, total # sims = 43960
+	model populations = (443, 477, 692), model weights = [0.48 0.25 0.27]
+Finished SMC iteration 9, eps = 0.20, time = 1.0s / 0.0m, popSize = 1574 -> 552, ESS = (327, 389, 549) -> (131, 167, 202), # sims = 35440, total # sims = 79400
+	model populations = (473, 442, 659), model weights = [0.47 0.26 0.27]
+Finished SMC iteration 10, eps = 0.18, time = 3.0s / 0.1m, popSize = 1605 -> 544, ESS = (449, 432, 564) -> (143, 170, 187), # sims = 96680, total # sims = 176080
+	model populations = (525, 474, 606), model weights = [0.44 0.29 0.27]
+Finished SMC iteration 11, eps = 0.17, time = 9.0s / 0.1m, popSize = 1642 -> 1000, ESS = (488, 486, 504) -> (309, 303, 285), # sims = 275480, total # sims = 451560
+	model populations = (553, 539, 550), model weights = [0.42 0.33 0.25]
+CPU times: user 12.4 s, sys: 213 ms, total: 12.6 s
+Wall time: 24.4 s
+Starting ABC-SMC with population size of 1000 and sample size of 75 (~> 75) on 40 processes.
+Finished sampling from prior, eps = 56.30, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = (334, 332, 334) -> (125, 174, 201), # sims = 1000, total # sims = 1000
+	model populations = (334, 332, 334), model weights = [0.33 0.33 0.33]
+Finished SMC iteration 1, eps = 1.68, time = 0.0s / 0.0m, popSize = 1541 -> 514, ESS = (325, 572, 589) -> (24, 456, 20), # sims = 2680, total # sims = 3680
+	model populations = (349, 590, 602), model weights = [0.26 0.35 0.39]
+Finished SMC iteration 2, eps = 1.67, time = 0.0s / 0.0m, popSize = 1553 -> 835, ESS = (48, 876, 222) -> (47, 232, 221), # sims = 3440, total # sims = 7120
+	model populations = (54, 978, 521), model weights = [0.07 0.86 0.07]
+Finished SMC iteration 3, eps = 1.08, time = 0.0s / 0.0m, popSize = 1841 -> 724, ESS = (79, 667, 698) -> (34, 58, 408), # sims = 3520, total # sims = 10640
+	model populations = (99, 723, 1019), model weights = [0.16 0.67 0.17]
+Finished SMC iteration 4, eps = 0.75, time = 0.0s / 0.0m, popSize = 1770 -> 672, ESS = (126, 319, 841) -> (94, 128, 278), # sims = 3520, total # sims = 14160
+	model populations = (181, 481, 1108), model weights = [0.32 0.27 0.4 ]
+Finished SMC iteration 5, eps = 0.50, time = 0.0s / 0.0m, popSize = 1690 -> 603, ESS = (206, 480, 721) -> (76, 186, 238), # sims = 3680, total # sims = 17840
+	model populations = (256, 617, 817), model weights = [0.42 0.27 0.31]
+Finished SMC iteration 6, eps = 0.33, time = 1.0s / 0.0m, popSize = 1619 -> 532, ESS = (234, 513, 710) -> (95, 168, 237), # sims = 4200, total # sims = 22040
+	model populations = (282, 582, 755), model weights = [0.49 0.25 0.27]
+Finished SMC iteration 7, eps = 0.25, time = 1.0s / 0.0m, popSize = 1563 -> 535, ESS = (310, 483, 650) -> (102, 180, 218), # sims = 6000, total # sims = 28040
+	model populations = (336, 522, 705), model weights = [0.46 0.28 0.27]
+Finished SMC iteration 8, eps = 0.21, time = 1.0s / 0.0m, popSize = 1647 -> 545, ESS = (356, 472, 630) -> (114, 188, 198), # sims = 13200, total # sims = 41240
+	model populations = (392, 536, 719), model weights = [0.43 0.3  0.27]
+Finished SMC iteration 9, eps = 0.18, time = 1.0s / 0.0m, popSize = 1572 -> 546, ESS = (328, 519, 534) -> (115, 217, 168), # sims = 29640, total # sims = 70880
+	model populations = (405, 588, 579), model weights = [0.41 0.35 0.24]
+Finished SMC iteration 10, eps = 0.16, time = 3.0s / 0.0m, popSize = 1610 -> 578, ESS = (348, 580, 464) -> (116, 245, 139), # sims = 80000, total # sims = 150880
+	model populations = (421, 672, 517), model weights = [0.36 0.43 0.21]
+Finished SMC iteration 11, eps = 0.15, time = 7.0s / 0.1m, popSize = 1603 -> 1000, ESS = (369, 701, 367) -> (219, 457, 222), # sims = 194320, total # sims = 345200
+	model populations = (405, 784, 414), model weights = [0.31 0.51 0.18]
+CPU times: user 12 s, sys: 191 ms, total: 12.2 s
+Wall time: 21 s
+Starting ABC-SMC with population size of 1000 and sample size of 100 (~> 100) on 40 processes.
+Finished sampling from prior, eps = 67.19, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = (350, 349, 301) -> (128, 170, 202), # sims = 1000, total # sims = 1000
+	model populations = (350, 349, 301), model weights = [0.35 0.35 0.3 ]
+Finished SMC iteration 1, eps = 1.61, time = 0.0s / 0.0m, popSize = 1533 -> 520, ESS = (364, 548, 561) -> (20, 459, 21), # sims = 2720, total # sims = 3720
+	model populations = (392, 567, 574), model weights = [0.27 0.33 0.4 ]
+Finished SMC iteration 2, eps = 1.60, time = 1.0s / 0.0m, popSize = 1541 -> 885, ESS = (87, 816, 170) -> (86, 245, 169), # sims = 3240, total # sims = 6960
+	model populations = (112, 944, 485), model weights = [0.05 0.88 0.06]
+Finished SMC iteration 3, eps = 1.03, time = 1.0s / 0.0m, popSize = 1895 -> 752, ESS = (88, 609, 605) -> (66, 52, 382), # sims = 3440, total # sims = 10400
+	model populations = (234, 700, 961), model weights = [0.16 0.67 0.17]
+Finished SMC iteration 4, eps = 0.69, time = 0.0s / 0.0m, popSize = 1985 -> 719, ESS = (195, 394, 808) -> (115, 144, 241), # sims = 3440, total # sims = 13840
+	model populations = (240, 648, 1097), model weights = [0.28 0.3  0.42]
+Finished SMC iteration 5, eps = 0.42, time = 0.0s / 0.0m, popSize = 1808 -> 590, ESS = (263, 542, 669) -> (116, 192, 192), # sims = 3440, total # sims = 17280
+	model populations = (293, 742, 773), model weights = [0.38 0.29 0.34]
+Finished SMC iteration 6, eps = 0.29, time = 0.0s / 0.0m, popSize = 1608 -> 544, ESS = (332, 514, 575) -> (120, 182, 198), # sims = 3440, total # sims = 20720
+	model populations = (370, 611, 627), model weights = [0.46 0.28 0.26]
+Finished SMC iteration 7, eps = 0.23, time = 1.0s / 0.0m, popSize = 1602 -> 541, ESS = (355, 514, 555) -> (128, 208, 164), # sims = 5280, total # sims = 26000
+	model populations = (433, 572, 597), model weights = [0.45 0.29 0.26]
+Finished SMC iteration 8, eps = 0.19, time = 1.0s / 0.0m, popSize = 1644 -> 561, ESS = (426, 479, 511) -> (119, 226, 155), # sims = 11360, total # sims = 37360
+	model populations = (495, 608, 541), model weights = [0.43 0.33 0.23]
+Finished SMC iteration 9, eps = 0.16, time = 1.0s / 0.0m, popSize = 1635 -> 566, ESS = (369, 582, 435) -> (94, 304, 102), # sims = 31000, total # sims = 68360
+	model populations = (411, 741, 483), model weights = [0.38 0.41 0.22]
+Finished SMC iteration 10, eps = 0.15, time = 3.0s / 0.0m, popSize = 1597 -> 551, ESS = (339, 811, 274) -> (83, 356, 61), # sims = 80480, total # sims = 148840
+	model populations = (388, 908, 301), model weights = [0.3  0.55 0.15]
+Finished SMC iteration 11, eps = 0.14, time = 9.0s / 0.1m, popSize = 1569 -> 1000, ESS = (212, 958, 195) -> (115, 646, 112), # sims = 214400, total # sims = 363240
+	model populations = (271, 1050, 248), model weights = [0.25 0.64 0.11]
+CPU times: user 11.9 s, sys: 220 ms, total: 12.1 s
+Wall time: 23.3 s
+Starting ABC-SMC with population size of 1000 and sample size of 150 (~> 150) on 40 processes.
+Finished sampling from prior, eps = 58.30, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = (347, 346, 307) -> (127, 184, 189), # sims = 1000, total # sims = 1000
+	model populations = (347, 346, 307), model weights = [0.35 0.35 0.31]
+Finished SMC iteration 1, eps = 1.71, time = 0.0s / 0.0m, popSize = 1545 -> 521, ESS = (340, 558, 566) -> (38, 433, 29), # sims = 2520, total # sims = 3520
+	model populations = (383, 582, 580), model weights = [0.25 0.34 0.41]
+Finished SMC iteration 2, eps = 1.71, time = 1.0s / 0.0m, popSize = 1551 -> 942, ESS = (41, 799, 199) -> (41, 261, 198), # sims = 3040, total # sims = 6560
+	model populations = (96, 909, 546), model weights = [0.08 0.84 0.07]
+Finished SMC iteration 3, eps = 1.05, time = 1.0s / 0.0m, popSize = 1955 -> 790, ESS = (93, 643, 687) -> (42, 53, 405), # sims = 3320, total # sims = 9880
+	model populations = (150, 733, 1072), model weights = [0.17 0.67 0.16]
+Finished SMC iteration 4, eps = 0.73, time = 0.0s / 0.0m, popSize = 1836 -> 740, ESS = (125, 320, 835) -> (74, 136, 290), # sims = 3320, total # sims = 13200
+	model populations = (167, 485, 1184), model weights = [0.31 0.26 0.42]
+Finished SMC iteration 5, eps = 0.46, time = 1.0s / 0.0m, popSize = 1754 -> 579, ESS = (179, 550, 685) -> (84, 204, 212), # sims = 3440, total # sims = 16640
+	model populations = (233, 681, 840), model weights = [0.43 0.26 0.31]
+Finished SMC iteration 6, eps = 0.30, time = 0.0s / 0.0m, popSize = 1675 -> 558, ESS = (278, 546, 616) -> (110, 207, 183), # sims = 3440, total # sims = 20080
+	model populations = (386, 617, 672), model weights = [0.48 0.26 0.26]
+Finished SMC iteration 7, eps = 0.23, time = 1.0s / 0.0m, popSize = 1587 -> 547, ESS = (353, 539, 543) -> (115, 203, 182), # sims = 4720, total # sims = 24800
+	model populations = (399, 597, 591), model weights = [0.48 0.29 0.23]
+Finished SMC iteration 8, eps = 0.20, time = 1.0s / 0.0m, popSize = 1548 -> 577, ESS = (335, 485, 526) -> (100, 230, 170), # sims = 9040, total # sims = 33840
+	model populations = (390, 592, 566), model weights = [0.45 0.34 0.21]
+Finished SMC iteration 9, eps = 0.17, time = 1.0s / 0.0m, popSize = 1611 -> 535, ESS = (299, 693, 456) -> (81, 301, 118), # sims = 22040, total # sims = 55880
+	model populations = (328, 776, 507), model weights = [0.36 0.45 0.18]
+Finished SMC iteration 10, eps = 0.15, time = 2.0s / 0.0m, popSize = 1551 -> 559, ESS = (251, 803, 291) -> (62, 387, 51), # sims = 55120, total # sims = 111000
+	model populations = (306, 904, 341), model weights = [0.28 0.58 0.14]
+Finished SMC iteration 11, eps = 0.15, time = 6.0s / 0.1m, popSize = 1581 -> 1000, ESS = (190, 1063, 184) -> (98, 727, 80), # sims = 150760, total # sims = 261760
+	model populations = (204, 1162, 215), model weights = [0.17 0.74 0.09]
+CPU times: user 12.3 s, sys: 231 ms, total: 12.5 s
+Wall time: 19.6 s
+Starting ABC-SMC with population size of 1000 and sample size of 200 (~> 200) on 40 processes.
+Finished sampling from prior, eps = 62.43, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = (349, 315, 336) -> (143, 156, 201), # sims = 1000, total # sims = 1000
+	model populations = (349, 315, 336), model weights = [0.35 0.32 0.34]
+Finished SMC iteration 1, eps = 1.63, time = 0.0s / 0.0m, popSize = 1531 -> 515, ESS = (380, 547, 545) -> (36, 441, 23), # sims = 2560, total # sims = 3560
+	model populations = (408, 566, 557), model weights = [0.27 0.34 0.38]
+Finished SMC iteration 2, eps = 1.63, time = 0.0s / 0.0m, popSize = 1517 -> 908, ESS = (81, 757, 190) -> (80, 230, 190), # sims = 2880, total # sims = 6440
+	model populations = (83, 881, 553), model weights = [0.07 0.87 0.07]
+Finished SMC iteration 3, eps = 1.02, time = 1.0s / 0.0m, popSize = 1919 -> 766, ESS = (146, 607, 669) -> (69, 39, 392), # sims = 3080, total # sims = 9520
+	model populations = (161, 695, 1063), model weights = [0.14 0.7  0.16]
+Finished SMC iteration 4, eps = 0.72, time = 0.0s / 0.0m, popSize = 1797 -> 744, ESS = (177, 276, 758) -> (88, 130, 282), # sims = 3080, total # sims = 12600
+	model populations = (243, 469, 1085), model weights = [0.28 0.27 0.44]
+Finished SMC iteration 5, eps = 0.44, time = 0.0s / 0.0m, popSize = 1786 -> 566, ESS = (221, 514, 633) -> (149, 186, 165), # sims = 3080, total # sims = 15680
+	model populations = (350, 665, 771), model weights = [0.37 0.28 0.35]
+Finished SMC iteration 6, eps = 0.28, time = 0.0s / 0.0m, popSize = 1641 -> 526, ESS = (303, 587, 560) -> (114, 226, 160), # sims = 3080, total # sims = 18760
+	model populations = (381, 656, 604), model weights = [0.42 0.3  0.28]
+Finished SMC iteration 7, eps = 0.21, time = 1.0s / 0.0m, popSize = 1550 -> 530, ESS = (386, 543, 509) -> (121, 231, 148), # sims = 4160, total # sims = 22920
+	model populations = (411, 585, 554), model weights = [0.44 0.31 0.25]
+Finished SMC iteration 8, eps = 0.17, time = 1.0s / 0.0m, popSize = 1545 -> 537, ESS = (256, 586, 430) -> (91, 303, 106), # sims = 7440, total # sims = 30360
+	model populations = (438, 631, 476), model weights = [0.41 0.39 0.2 ]
+Finished SMC iteration 9, eps = 0.15, time = 1.0s / 0.0m, popSize = 1594 -> 544, ESS = (283, 817, 346) -> (56, 380, 64), # sims = 16880, total # sims = 47240
+	model populations = (312, 890, 392), model weights = [0.28 0.58 0.14]
+Finished SMC iteration 10, eps = 0.13, time = 2.0s / 0.0m, popSize = 1659 -> 533, ESS = (171, 1139, 215) -> (21, 457, 22), # sims = 46440, total # sims = 93680
+	model populations = (190, 1236, 233), model weights = [0.17 0.74 0.08]
+Finished SMC iteration 11, eps = 0.12, time = 5.0s / 0.1m, popSize = 1640 -> 1000, ESS = (63, 1301, 73) -> (19, 843, 33), # sims = 112800, total # sims = 206480
+	model populations = (89, 1469, 82), model weights = [0.07 0.9  0.03]
+CPU times: user 11.7 s, sys: 184 ms, total: 11.9 s
+Wall time: 17.4 s
+===
+-9
+Fitting a gamma model to 25 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.010
+Stage:   1 Beta: 0.047
+Stage:   2 Beta: 0.129
+Stage:   3 Beta: 0.277
+Stage:   4 Beta: 0.779
+Stage:   5 Beta: 1.000
+CPU times: user 2.49 s, sys: 694 ms, total: 3.19 s
+Wall time: 31.8 s
+Fitting a gamma model to 50 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.005
+Stage:   1 Beta: 0.024
+Stage:   2 Beta: 0.068
+Stage:   3 Beta: 0.153
+Stage:   4 Beta: 0.433
+Stage:   5 Beta: 1.000
+CPU times: user 1.92 s, sys: 13.9 ms, total: 1.93 s
+Wall time: 1.94 s
+Fitting a gamma model to 75 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.003
+Stage:   1 Beta: 0.016
+Stage:   2 Beta: 0.044
+Stage:   3 Beta: 0.095
+Stage:   4 Beta: 0.272
+Stage:   5 Beta: 0.913
+Stage:   6 Beta: 1.000
+CPU times: user 1.93 s, sys: 12 ms, total: 1.94 s
+Wall time: 1.95 s
+Fitting a gamma model to 100 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.002
+Stage:   1 Beta: 0.012
+Stage:   2 Beta: 0.032
+Stage:   3 Beta: 0.070
+Stage:   4 Beta: 0.197
+Stage:   5 Beta: 0.657
+Stage:   6 Beta: 1.000
+CPU times: user 2.22 s, sys: 19.4 ms, total: 2.24 s
+Wall time: 2.26 s
+Fitting a gamma model to 150 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.002
+Stage:   1 Beta: 0.008
+Stage:   2 Beta: 0.022
+Stage:   3 Beta: 0.048
+Stage:   4 Beta: 0.137
+Stage:   5 Beta: 0.451
+Stage:   6 Beta: 1.000
+CPU times: user 1.98 s, sys: 5.93 ms, total: 1.98 s
+Wall time: 1.99 s
+Fitting a gamma model to 200 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.001
+Stage:   1 Beta: 0.006
+Stage:   2 Beta: 0.016
+Stage:   3 Beta: 0.035
+Stage:   4 Beta: 0.098
+Stage:   5 Beta: 0.331
+Stage:   6 Beta: 1.000
+CPU times: user 1.98 s, sys: 15 ms, total: 2 s
+Wall time: 2 s
+Fitting a lognormal model to 25 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.008
+Stage:   1 Beta: 0.046
+Stage:   2 Beta: 0.127
+Stage:   3 Beta: 0.292
+Stage:   4 Beta: 0.791
+Stage:   5 Beta: 1.000
+CPU times: user 1.93 s, sys: 166 ms, total: 2.09 s
+Wall time: 12.1 s
+Fitting a lognormal model to 50 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.004
+Stage:   1 Beta: 0.023
+Stage:   2 Beta: 0.064
+Stage:   3 Beta: 0.152
+Stage:   4 Beta: 0.416
+Stage:   5 Beta: 1.000
+CPU times: user 1.86 s, sys: 17.1 ms, total: 1.88 s
+Wall time: 1.89 s
+Fitting a lognormal model to 75 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.003
+Stage:   1 Beta: 0.015
+Stage:   2 Beta: 0.042
+Stage:   3 Beta: 0.097
+Stage:   4 Beta: 0.264
+Stage:   5 Beta: 0.866
+Stage:   6 Beta: 1.000
+CPU times: user 2.21 s, sys: 35.1 ms, total: 2.25 s
+Wall time: 2.25 s
+Fitting a lognormal model to 100 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.002
+Stage:   1 Beta: 0.011
+Stage:   2 Beta: 0.030
+Stage:   3 Beta: 0.067
+Stage:   4 Beta: 0.183
+Stage:   5 Beta: 0.588
+Stage:   6 Beta: 1.000
+CPU times: user 1.94 s, sys: 7.89 ms, total: 1.95 s
+Wall time: 1.96 s
+Fitting a lognormal model to 150 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.001
+Stage:   1 Beta: 0.008
+Stage:   2 Beta: 0.021
+Stage:   3 Beta: 0.047
+Stage:   4 Beta: 0.129
+Stage:   5 Beta: 0.414
+Stage:   6 Beta: 1.000
+CPU times: user 1.92 s, sys: 9.31 ms, total: 1.93 s
+Wall time: 1.94 s
+Fitting a lognormal model to 200 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.001
+Stage:   1 Beta: 0.006
+Stage:   2 Beta: 0.015
+Stage:   3 Beta: 0.036
+Stage:   4 Beta: 0.096
+Stage:   5 Beta: 0.313
+Stage:   6 Beta: 1.000
+CPU times: user 1.98 s, sys: 15.1 ms, total: 2 s
+Wall time: 2.01 s
+Fitting a weibull model to 25 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.012
+Stage:   1 Beta: 0.049
+Stage:   2 Beta: 0.114
+Stage:   3 Beta: 0.249
+Stage:   4 Beta: 0.754
+Stage:   5 Beta: 1.000
+CPU times: user 1.97 s, sys: 114 ms, total: 2.08 s
+Wall time: 8.92 s
+Fitting a weibull model to 50 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.006
+Stage:   1 Beta: 0.025
+Stage:   2 Beta: 0.060
+Stage:   3 Beta: 0.135
+Stage:   4 Beta: 0.376
+Stage:   5 Beta: 1.000
+CPU times: user 2.27 s, sys: 34.2 ms, total: 2.3 s
+Wall time: 2.31 s
+Fitting a weibull model to 75 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.004
+Stage:   1 Beta: 0.017
+Stage:   2 Beta: 0.039
+Stage:   3 Beta: 0.085
+Stage:   4 Beta: 0.236
+Stage:   5 Beta: 0.774
+Stage:   6 Beta: 1.000
+CPU times: user 2.15 s, sys: 6.91 ms, total: 2.15 s
+Wall time: 2.16 s
+Fitting a weibull model to 100 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.003
+Stage:   1 Beta: 0.012
+Stage:   2 Beta: 0.029
+Stage:   3 Beta: 0.063
+Stage:   4 Beta: 0.173
+Stage:   5 Beta: 0.587
+Stage:   6 Beta: 1.000
+CPU times: user 2.16 s, sys: 17.3 ms, total: 2.18 s
+Wall time: 2.19 s
+Fitting a weibull model to 150 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.002
+Stage:   1 Beta: 0.008
+Stage:   2 Beta: 0.019
+Stage:   3 Beta: 0.042
+Stage:   4 Beta: 0.119
+Stage:   5 Beta: 0.395
+Stage:   6 Beta: 1.000
+CPU times: user 2.3 s, sys: 7.95 ms, total: 2.31 s
+Wall time: 2.32 s
+Fitting a weibull model to 200 data points generated from a lognormal model
+Initializing SMC sampler...
+Sampling 1 chain in 1 job
+Stage:   0 Beta: 0.001
+Stage:   1 Beta: 0.006
+Stage:   2 Beta: 0.014
+Stage:   3 Beta: 0.031
+Stage:   4 Beta: 0.085
+Stage:   5 Beta: 0.280
+Stage:   6 Beta: 0.961
+Stage:   7 Beta: 1.000
+CPU times: user 2.49 s, sys: 10.2 ms, total: 2.5 s
+Wall time: 2.51 s
+===
+-10
+	model_data	model_fit	ss	param_1		param_2		marginal_log_likelihood
+0	lognormal	gamma		25.0	1.452940	1.338451	-44.106862
+0	lognormal	gamma		50.0	1.260282	1.540875	-86.467702
+0	lognormal	gamma		75.0	1.325229	1.327695	-120.298522
+0	lognormal	gamma		100.0	1.404371	1.180437	-152.491596
+0	lognormal	gamma		150.0	1.350877	1.294970	-235.508674
+0	lognormal	gamma		200.0	1.385706	1.198068	-301.205588
+0	lognormal	lognormal	25.0	0.157524	1.017816	-44.897210
+0	lognormal	lognormal	50.0	0.154357	1.021445	-85.473633
+0	lognormal	lognormal	75.0	0.103541	0.958989	-117.065667
+0	lognormal	lognormal	100.0	0.082713	0.910577	-147.395901
+0	lognormal	lognormal	150.0	0.126745	0.931352	-227.963629
+0	lognormal	lognormal	200.0	0.090836	0.913743	-290.913671
+0	lognormal	weibull		25.0	1.288980	1.947810	-44.276544
+0	lognormal	weibull		50.0	1.108823	1.957103	-87.246319
+0	lognormal	weibull		75.0	1.124095	1.804692	-121.585914
+0	lognormal	weibull		100.0	1.155493	1.730290	-154.420775
+0	lognormal	weibull		150.0	1.125347	1.816000	-237.945842
+0	lognormal	weibull		200.0	1.137720	1.730878	-304.734223
+===
+-11
+
+	model_data	model_fit	ss	param_1	param_2	marginal_log_likelihood_x	marginal_log_likelihood_y	BF_x	BF_y	model_probability
+0	lognormal	gamma		25.0	1.452940	1.338451	-44.106862	-44.106862	1.000000e+00	2.297620	4.352330e-01
+1	lognormal	gamma		50.0	1.260282	1.540875	-86.467702	-85.473633	3.700679e-01	1.539944	2.403126e-01
+2	lognormal	gamma		75.0	1.325229	1.327695	-120.298522	-117.065667	3.944473e-02	1.050331	3.755457e-02
+3	lognormal	gamma		100.0	1.404371	1.180437	-152.491596	-147.395901	6.123047e-03	1.007013	6.080408e-03
+4	lognormal	gamma		150.0	1.350877	1.294970	-235.508674	-227.963629	5.287236e-04	1.000575	5.284198e-04
+5	lognormal	gamma		200.0	1.385706	1.198068	-301.205588	-290.913671	3.390605e-05	1.000035	3.390486e-05
+6	lognormal	lognormal	25.0	0.157524	1.017816	-44.897210	-44.106862	4.536870e-01	2.297620	1.974595e-01
+7	lognormal	lognormal	50.0	0.154357	1.021445	-85.473633	-85.473633	1.000000e+00	1.539944	6.493743e-01
+8	lognormal	lognormal	75.0	0.103541	0.958989	-117.065667	-117.065667	1.000000e+00	1.050331	9.520808e-01
+9	lognormal	lognormal	100.0	0.082713	0.910577	-147.395901	-147.395901	1.000000e+00	1.007013	9.930363e-01
+10	lognormal	lognormal	150.0	0.126745	0.931352	-227.963629	-227.963629	1.000000e+00	1.000575	9.994254e-01
+11	lognormal	lognormal	200.0	0.090836	0.913743	-290.913671	-290.913671	1.000000e+00	1.000035	9.999651e-01
+12	lognormal	weibull		25.0	1.288980	1.947810	-44.276544	-44.106862	8.439330e-01	2.297620	3.673075e-01
+13	lognormal	weibull		50.0	1.108823	1.957103	-87.246319	-85.473633	1.698761e-01	1.539944	1.103132e-01
+14	lognormal	weibull		75.0	1.124095	1.804692	-121.585914	-117.065667	1.088634e-02	1.050331	1.036467e-02
+15	lognormal	weibull		100.0	1.155493	1.730290	-154.420775	-147.395901	8.894801e-04	1.007013	8.832860e-04
+16	lognormal	weibull		150.0	1.125347	1.816000	-237.945842	-227.963629	4.621470e-05	1.000575	4.618815e-05
+17	lognormal	weibull		200.0	1.137720	1.730878	-304.734223	-290.913671	9.949712e-07	1.000035	9.949365e-07
+===
+-13
+		model_data	model_fit	ss		model_probability	model_probability_ABC
+0		lognormal	gamma		25.0		0.44				0.45
+1		lognormal	gamma		50.0		0.24				0.43
+2		lognormal	gamma		75.0		0.04				0.30
+3		lognormal	gamma		100.0		0.01				0.24
+4		lognormal	gamma		150.0		0.00				0.14
+5		lognormal	gamma		200.0		0.00				0.05
+6		lognormal	lognormal	25.0		0.20				0.18
+7		lognormal	lognormal	50.0		0.65				0.34
+8		lognormal	lognormal	75.0		0.95				0.53
+9		lognormal	lognormal	100.0		0.99				0.67
+10		lognormal	lognormal	150.0		1.00				0.79
+11		lognormal	lognormal	200.0		1.00				0.93
+12		lognormal	weibull		25.0		0.37				0.37
+13		lognormal	weibull		50.0		0.11				0.23
+14		lognormal	weibull		75.0		0.01				0.18
+15		lognormal	weibull		100.0		0.00				0.09
+16		lognormal	weibull		150.0		0.00				0.07
+17		lognormal	weibull		200.0		0.00				0.02
+===
+-14
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{3}{r}{model_probability} & \multicolumn{3}{r}{model_probability_ABC} \\
+model_fit & gamma & lognormal & weibull & gamma & lognormal & weibull \\
+ss &  &  &  &  &  &  \\
+\midrule
+25.000000 & 0.440000 & 0.200000 & 0.370000 & 0.450000 & 0.180000 & 0.370000 \\
+50.000000 & 0.240000 & 0.650000 & 0.110000 & 0.430000 & 0.340000 & 0.230000 \\
+75.000000 & 0.040000 & 0.950000 & 0.010000 & 0.300000 & 0.530000 & 0.180000 \\
+100.000000 & 0.010000 & 0.990000 & 0.000000 & 0.240000 & 0.670000 & 0.090000 \\
+150.000000 & 0.000000 & 1.000000 & 0.000000 & 0.140000 & 0.790000 & 0.070000 \\
+200.000000 & 0.000000 & 1.000000 & 0.000000 & 0.050000 & 0.930000 & 0.020000 \\
+\bottomrule
+\end{tabular}
+===
+last
+Notebook time = 468 secs = 7.80 mins
+
+

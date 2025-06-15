@@ -1,0 +1,102 @@
+ABC version: 0.2.1
+Python version: 3.8.20 (default, Oct  3 2024, 15:24:27) 
+[GCC 11.2.0]
+Numpy version: 1.22.3
+PyMC3 version: 3.11.4
+Arviz version: 0.12.1
+Pandas version: 2.0.3
+===
+numIters = 10
+popSize = 1000
+smcArgs = {"verbose": True, "numProcs": 40}
+===
+-9
+Starting ABC-SMC with population size of 1000 and sample size of 50 (~> 50) on 40 processes.
+Finished sampling from prior, eps = 166.76, time = 151.0s / 2.5m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 5.85, time = 31.0s / 0.5m, popSize = 1652 -> 535, ESS = 1524 -> 500, # sims = 7960, total # sims = 8960
+Finished SMC iteration 2, eps = 3.71, time = 0.0s / 0.0m, popSize = 1591 -> 546, ESS = 1433 -> 500, # sims = 7960, total # sims = 16920
+Finished SMC iteration 3, eps = 2.54, time = 1.0s / 0.0m, popSize = 1578 -> 549, ESS = 1423 -> 500, # sims = 10960, total # sims = 27880
+Finished SMC iteration 4, eps = 2.03, time = 1.0s / 0.0m, popSize = 1573 -> 649, ESS = 1303 -> 500, # sims = 17120, total # sims = 45000
+Finished SMC iteration 5, eps = 1.59, time = 1.0s / 0.0m, popSize = 1666 -> 572, ESS = 1306 -> 500, # sims = 30120, total # sims = 75120
+Finished SMC iteration 6, eps = 1.29, time = 2.0s / 0.0m, popSize = 1590 -> 611, ESS = 1055 -> 500, # sims = 42640, total # sims = 117760
+Finished SMC iteration 7, eps = 1.07, time = 2.0s / 0.0m, popSize = 1635 -> 598, ESS = 1291 -> 500, # sims = 70920, total # sims = 188680
+Finished SMC iteration 8, eps = 1.03, time = 3.0s / 0.1m, popSize = 1598 -> 1224, ESS = 679 -> 500, # sims = 99360, total # sims = 288040
+Finished SMC iteration 9, eps = 0.89, time = 5.0s / 0.1m, popSize = 2273 -> 838, ESS = 1268 -> 500, # sims = 158760, total # sims = 446800
+Finished SMC iteration 10, eps = 0.82, time = 8.0s / 0.1m, popSize = 1857 -> 1000, ESS = 918 -> 591, # sims = 266280, total # sims = 713080
+CPU times: user 17.8 s, sys: 1.48 s, total: 19.3 s
+Wall time: 3min 28s
+Starting ABC-SMC with population size of 1000 and sample size of 50 (~> 100) on 40 processes.
+Finished sampling from prior, eps = 155.48, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 6.01, time = 1.0s / 0.0m, popSize = 1569 -> 531, ESS = 1469 -> 500, # sims = 8080, total # sims = 9080
+Finished SMC iteration 2, eps = 4.71, time = 0.0s / 0.0m, popSize = 1646 -> 536, ESS = 1476 -> 500, # sims = 8080, total # sims = 17160
+Finished SMC iteration 3, eps = 4.15, time = 1.0s / 0.0m, popSize = 1558 -> 559, ESS = 1342 -> 500, # sims = 9400, total # sims = 26560
+Finished SMC iteration 4, eps = 3.78, time = 1.0s / 0.0m, popSize = 1625 -> 560, ESS = 1404 -> 500, # sims = 24000, total # sims = 50560
+Finished SMC iteration 5, eps = 3.37, time = 2.0s / 0.0m, popSize = 1577 -> 597, ESS = 1322 -> 500, # sims = 49680, total # sims = 100240
+Finished SMC iteration 6, eps = 3.28, time = 4.0s / 0.1m, popSize = 2461 -> 2075, ESS = 639 -> 500, # sims = 49680, total # sims = 149920
+Finished SMC iteration 7, eps = 2.71, time = 3.0s / 0.1m, popSize = 3275 -> 961, ESS = 1485 -> 500, # sims = 49680, total # sims = 199600
+Finished SMC iteration 8, eps = 2.11, time = 5.0s / 0.1m, popSize = 3833 -> 615, ESS = 2703 -> 500, # sims = 49680, total # sims = 249280
+Finished SMC iteration 9, eps = 1.80, time = 4.0s / 0.1m, popSize = 3116 -> 645, ESS = 1979 -> 500, # sims = 49680, total # sims = 298960
+Finished SMC iteration 10, eps = 1.72, time = 4.0s / 0.1m, popSize = 2000 -> 1000, ESS = 1394 -> 828, # sims = 49680, total # sims = 348640
+CPU times: user 9.59 s, sys: 197 ms, total: 9.78 s
+Wall time: 31.9 s
+Starting ABC-SMC with population size of 1000 and sample size of 50 (~> 50) on 40 processes.
+Finished sampling from prior, eps = 237.10, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 5.92, time = 1.0s / 0.0m, popSize = 1694 -> 531, ESS = 1582 -> 500, # sims = 8720, total # sims = 9720
+Finished SMC iteration 2, eps = 3.57, time = 0.0s / 0.0m, popSize = 1727 -> 540, ESS = 1561 -> 500, # sims = 8720, total # sims = 18440
+Finished SMC iteration 3, eps = 2.48, time = 1.0s / 0.0m, popSize = 1560 -> 560, ESS = 1346 -> 500, # sims = 10520, total # sims = 28960
+Finished SMC iteration 4, eps = 1.91, time = 1.0s / 0.0m, popSize = 1589 -> 604, ESS = 1300 -> 500, # sims = 18040, total # sims = 47000
+Finished SMC iteration 5, eps = 1.51, time = 1.0s / 0.0m, popSize = 1738 -> 613, ESS = 1295 -> 500, # sims = 39040, total # sims = 86040
+Finished SMC iteration 6, eps = 1.23, time = 2.0s / 0.0m, popSize = 1662 -> 590, ESS = 1253 -> 500, # sims = 60040, total # sims = 146080
+Finished SMC iteration 7, eps = 1.05, time = 2.0s / 0.0m, popSize = 1598 -> 666, ESS = 1163 -> 500, # sims = 77520, total # sims = 223600
+Finished SMC iteration 8, eps = 0.93, time = 4.0s / 0.1m, popSize = 1712 -> 768, ESS = 1122 -> 500, # sims = 129360, total # sims = 352960
+Finished SMC iteration 9, eps = 0.81, time = 7.0s / 0.1m, popSize = 1861 -> 673, ESS = 1310 -> 500, # sims = 261800, total # sims = 614760
+Finished SMC iteration 10, eps = 0.76, time = 12.0s / 0.2m, popSize = 1682 -> 1000, ESS = 1095 -> 612, # sims = 444400, total # sims = 1059160
+CPU times: user 10.6 s, sys: 213 ms, total: 10.9 s
+Wall time: 36.8 s
+Starting ABC-SMC with population size of 1000 and sample size of 250 (~> 250) on 40 processes.
+Finished sampling from prior, eps = 346.58, time = 2.0s / 0.0m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 6.37, time = 1.0s / 0.0m, popSize = 1504 -> 534, ESS = 1407 -> 500, # sims = 7160, total # sims = 8160
+Finished SMC iteration 2, eps = 4.08, time = 1.0s / 0.0m, popSize = 1553 -> 537, ESS = 1421 -> 500, # sims = 8120, total # sims = 16280
+Finished SMC iteration 3, eps = 2.44, time = 1.0s / 0.0m, popSize = 1537 -> 566, ESS = 1352 -> 500, # sims = 8440, total # sims = 24720
+Finished SMC iteration 4, eps = 1.66, time = 1.0s / 0.0m, popSize = 1617 -> 566, ESS = 1407 -> 500, # sims = 14640, total # sims = 39360
+Finished SMC iteration 5, eps = 1.27, time = 1.0s / 0.0m, popSize = 1610 -> 749, ESS = 1204 -> 500, # sims = 21640, total # sims = 61000
+Finished SMC iteration 6, eps = 0.97, time = 2.0s / 0.0m, popSize = 1774 -> 792, ESS = 1274 -> 500, # sims = 32520, total # sims = 93520
+Finished SMC iteration 7, eps = 0.73, time = 3.0s / 0.0m, popSize = 1814 -> 726, ESS = 1281 -> 500, # sims = 39000, total # sims = 132520
+Finished SMC iteration 8, eps = 0.55, time = 3.0s / 0.1m, popSize = 1787 -> 624, ESS = 1288 -> 500, # sims = 50640, total # sims = 183160
+Finished SMC iteration 9, eps = 0.45, time = 4.0s / 0.1m, popSize = 1637 -> 660, ESS = 1035 -> 500, # sims = 58840, total # sims = 242000
+Finished SMC iteration 10, eps = 0.40, time = 5.0s / 0.1m, popSize = 1667 -> 1000, ESS = 1247 -> 768, # sims = 85040, total # sims = 327040
+CPU times: user 11 s, sys: 221 ms, total: 11.3 s
+Wall time: 27.2 s
+Starting ABC-SMC with population size of 1000 and sample size of 250 (~> 500) on 40 processes.
+Finished sampling from prior, eps = 196.18, time = 5.0s / 0.1m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 6.24, time = 5.0s / 0.1m, popSize = 1652 -> 534, ESS = 1536 -> 500, # sims = 8320, total # sims = 9320
+Finished SMC iteration 2, eps = 4.13, time = 4.0s / 0.1m, popSize = 1666 -> 549, ESS = 1506 -> 500, # sims = 8320, total # sims = 17640
+Finished SMC iteration 3, eps = 2.93, time = 5.0s / 0.1m, popSize = 1567 -> 547, ESS = 1411 -> 500, # sims = 9760, total # sims = 27400
+Finished SMC iteration 4, eps = 2.42, time = 10.0s / 0.2m, popSize = 1579 -> 590, ESS = 1239 -> 500, # sims = 14640, total # sims = 42040
+Finished SMC iteration 5, eps = 2.12, time = 16.0s / 0.3m, popSize = 1600 -> 588, ESS = 1328 -> 500, # sims = 20680, total # sims = 62720
+Finished SMC iteration 6, eps = 1.95, time = 24.0s / 0.4m, popSize = 1640 -> 648, ESS = 1324 -> 500, # sims = 29240, total # sims = 91960
+Finished SMC iteration 7, eps = 1.86, time = 35.0s / 0.6m, popSize = 1695 -> 687, ESS = 1292 -> 500, # sims = 47200, total # sims = 139160
+Finished SMC iteration 8, eps = 1.83, time = 70.0s / 1.2m, popSize = 1762 -> 1160, ESS = 847 -> 500, # sims = 98720, total # sims = 237880
+Finished SMC iteration 9, eps = 1.77, time = 145.0s / 2.4m, popSize = 2224 -> 877, ESS = 1331 -> 500, # sims = 213120, total # sims = 451000
+Finished SMC iteration 10, eps = 1.73, time = 285.0s / 4.7m, popSize = 1877 -> 1000, ESS = 1179 -> 619, # sims = 404480, total # sims = 855480
+CPU times: user 11.1 s, sys: 888 ms, total: 12 s
+Wall time: 10min 6s
+Starting ABC-SMC with population size of 1000 and sample size of 250 (~> 250) on 40 processes.
+Finished sampling from prior, eps = 229.79, time = 3.0s / 0.0m, popSize = 1000 -> 500, ESS = 1000 -> 500, # sims = 1000, total # sims = 1000
+Finished SMC iteration 1, eps = 6.35, time = 1.0s / 0.0m, popSize = 1503 -> 535, ESS = 1398 -> 500, # sims = 6840, total # sims = 7840
+Finished SMC iteration 2, eps = 4.11, time = 1.0s / 0.0m, popSize = 1539 -> 551, ESS = 1388 -> 500, # sims = 6840, total # sims = 14680
+Finished SMC iteration 3, eps = 2.58, time = 1.0s / 0.0m, popSize = 1581 -> 610, ESS = 1359 -> 500, # sims = 9080, total # sims = 23760
+Finished SMC iteration 4, eps = 1.78, time = 1.0s / 0.0m, popSize = 1661 -> 631, ESS = 1395 -> 500, # sims = 13520, total # sims = 37280
+Finished SMC iteration 5, eps = 1.31, time = 1.0s / 0.0m, popSize = 1675 -> 671, ESS = 1367 -> 500, # sims = 20840, total # sims = 58120
+Finished SMC iteration 6, eps = 1.01, time = 2.0s / 0.0m, popSize = 1700 -> 758, ESS = 1191 -> 500, # sims = 30960, total # sims = 89080
+Finished SMC iteration 7, eps = 0.70, time = 2.0s / 0.0m, popSize = 1778 -> 564, ESS = 1377 -> 500, # sims = 39240, total # sims = 128320
+Finished SMC iteration 8, eps = 0.55, time = 2.0s / 0.0m, popSize = 1612 -> 655, ESS = 1170 -> 500, # sims = 39240, total # sims = 167560
+Finished SMC iteration 9, eps = 0.44, time = 3.0s / 0.0m, popSize = 1693 -> 660, ESS = 1201 -> 500, # sims = 59560, total # sims = 227120
+Finished SMC iteration 10, eps = 0.40, time = 4.0s / 0.1m, popSize = 1671 -> 1000, ESS = 1194 -> 703, # sims = 77840, total # sims = 304960
+CPU times: user 9.65 s, sys: 158 ms, total: 9.81 s
+Wall time: 21.5 s
+CPU times: user 1min 9s, sys: 3.27 s, total: 1min 13s
+Wall time: 15min 39s
+===
+last
+Notebook time = 1560 secs = 25.99 mins
