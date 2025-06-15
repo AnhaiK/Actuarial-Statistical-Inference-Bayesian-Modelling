@@ -1,39 +1,37 @@
-# 📚 Exploring Actuarial Science
+# 📊 Exploring Actuarial Science through Statistical Inference & Bayesian Modeling
 
-This repository documents my academic work in actuarial science across two semesters. Each semester involved independent research, coding, analysis, and report writing based on different aspects of statistical and actuarial modeling.
+This repository documents a two-phase exploration into actuarial science and statistical modeling, carried out over the 7th and 8th semesters of the BTech program. Each phase targets a different theoretical and applied frontier in modeling insurance loss behavior.
 
 ---
 
-## 🕰️ Semester 7
+## 🧪 Phase I:
+### `DATASET-GENERATION-AND-DISTRIBUTION-FITTING-FOR-ORDER-STATISTICS-BASED-INFERENCE`
 
-Preliminary research and experiments on statistical model fitting, goodness-of-fit analysis, and visualization of probability distributions. Implemented custom Julia code and generated plots for distribution fitting.
-
-📂 [semester7/](./semester7/)
+> *Goal:* To simulate datasets and explore fitting techniques using classic distribution-fitting metrics and order statistics.
 
 **Contents:**
-- 📊 AIC and KS fit comparisons
-- 🧪 `ostat4_implem.jl`: Custom Julia implementation
-- 📈 Plot outputs (`*.png`)
-- 🗒️ Output logs and selected random variables
+- Simulated claim-size datasets and order-statistic transformations
+- Visual diagnostics: KDE plots, AIC comparison graphs
+- Statistical tests: Kolmogorov–Smirnov, AIC rankings
+- Julia implementation of statistical procedures (`ostat4_implem.jl`)
 
 ---
 
-## 🎓 Semester 8
+## 🔍 Phase II:
+### `APPROXIMATE-BAYESIAN-COMPUTATIONS-TO-FIT-AND-COMPARE-INSURANCE-LOSS-MODELS`
 
-Final B.Tech project with code based on academic papers, environment reproducibility, and a formal project report. Work focused on applying actuarial modeling techniques, refining code, and producing presentable outputs.
-
-📂 [semester-8/](./semester-8/)
+> *Goal:* To apply Approximate Bayesian Computation (ABC) for robust fitting and comparison of insurance loss models.
 
 **Contents:**
-- 📄 [Report](./semester-8/report.pdf): Final project document
-- 🧪 [Environment](./semester-8/environment.yml): Reproducible conda setup
-- 💻 [Code](./semester-8/project-code/): Modified implementations and scripts
-- 🗒️ [README](./semester-8/README.md): Instructions and attribution
+- Final research report (`report.pdf`)
+- Python environment (`environment.yml`) for reproducibility
+- Main implementation inside `project-code/`
+- Inference performed using ABC techniques to handle complex/lack-of-likelihood models
 
 ---
 
-## 💡 Note
+## 📁 Repository Layout
 
-All code is for academic use. Attribution to original authors has been maintained where applicable. This structure is maintained to demonstrate progression and rigor across both semesters of work.
-
----
+├── DATASET-GENERATION-AND-DISTRIBUTION-FITTING-FOR-ORDER-STATISTICS-BASED-INFERENCE/
+├── APPROXIMATE-BAYESIAN-COMPUTATIONS-TO-FIT-AND-COMPARE-INSURANCE-LOSS-MODELS/
+└── main_README.md
